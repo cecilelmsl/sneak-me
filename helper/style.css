@@ -1,0 +1,144 @@
+ 
+.chatbot-container {
+  width: 35em;
+  height: 45em;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  font-family: arial;
+  visibility: hidden;
+}
+
+.chatbot-container.visible {
+  visibility: visible;
+}
+
+.chatbot-header {
+
+  /* background: linear-gradient(red,orange, yellow, green, blue, purple);*/
+  background-color: #28357a;
+  color: white;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+#chatbot-messages {
+  overflow-y: scroll;
+  flex-grow: 1;
+  padding: 10px;
+  flex-direction: column;
+
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #e02020;
+  color: #333;
+
+}
+
+
+
+.chatbot-input {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid black;
+  padding: 12px;
+}
+
+.chatbot-input input[type="text"] {
+  flex-grow: 1;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.chatbot-input button {
+  border: none;
+  background-color: #22427c;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-input button:hover {
+  background-color: #1e88e5;
+}
+
+.logo {
+  max-width: 25%;
+  margin-right: 30px;
+}
+
+.chatbot-messages.bot-messages {
+  padding: 20px;
+  border-radius: 50px;
+  background-color: #abb7ce;
+  color: white;
+  margin-right: 70px;
+}
+
+.chatbot-messages.user-messages {
+  padding: 15px;
+
+  border-radius: 50px;
+  background-color: #445188;
+  color: white;
+  margin-left: 80px;
+}
+
+#close-chatbot-btn {
+  margin-left: 15px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 35px;
+  color: #fff;
+  background-color: #28357a;
+  border: none;
+}
+
+
+/*------------*/
+#logobll {
+  position: fixed;
+  bottom: 4em;
+  right: 2em;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/*.chatbot-bulle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); 
+  }*/
